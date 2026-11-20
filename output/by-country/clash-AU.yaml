@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - xiaohe
+- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   type: vless
-  server: 185.197.193.137
+  server: 104.18.10.153
   port: 443
-  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: us2.v2less.site
+  servername: portland-wins-robbie-skirt.trycloudflare.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /e0843c8ad581
     headers:
-      Host: us2.v2less.site
+      Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
